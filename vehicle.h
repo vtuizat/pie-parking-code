@@ -4,9 +4,9 @@
 #include <string>
 #include <vector>
 
-enum Status {ENTRE, SORT, GARE } ;
+enum Status {ENTRE, SORT, FILE } ;
 
-class vehicle
+class Vehicle
 {
     private:
 // ID
@@ -25,9 +25,22 @@ class vehicle
     bool objectSensor; //avant ? arriere ? global ? 
 
     public:
-    std::string getID();
+    Vehicle();
+    ~Vehicle();
 
-}
+    std::string getID();
+    Status getVehicleStatus();
+    int getTimeOfArrival();
+
+    float getChargeLevel();
+    bool getIsCharging();
+    bool getIsPluggedFront();
+    bool getIsPluggedBack();
+
+
+
+};
+
 
 #endif // VEHICLE_H
 
