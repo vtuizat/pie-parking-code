@@ -4,6 +4,7 @@
 #include <string>
 #include <vector>
 
+enum Status {ENTRE, SORT, GARE } ;
 
 class vehicle
 {
@@ -11,8 +12,8 @@ class vehicle
 // ID
     std::string vehicleID;
 
-    char userStatus // 
-    std::string driverID
+    Status vehicleStatus;
+    int timeOfArrival ;// date d'entree de la voiture dans le parking
 // energy
     float chargeLevel;
     bool isCharging;
@@ -23,9 +24,9 @@ class vehicle
     std::vector<float> speed;
     bool objectSensor; //avant ? arriere ? global ? 
 
-
-
     public:
+    std::string getID();
+
 }
 
 #endif // VEHICLE_H
