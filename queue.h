@@ -3,7 +3,7 @@
 #include <vehicle.h>
 
 
-class queue
+class Queue
 {
 
     private :
