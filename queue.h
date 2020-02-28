@@ -8,7 +8,7 @@ class Queue
 
     private :
     int length_file ;
-    std::vector<vehicle> vehicles ;
+    std::vector<Vehicle> vehicles ;
     std::string file_ID ;
     vehicle vehicule_in_charge ;
     std::vector<float> power ;
